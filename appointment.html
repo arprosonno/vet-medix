@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet-Medix-Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Appointment Confirmed! Thank you for scheduling with Vet-Medix.");
+            event.target.submit(); // Proceed with form submission
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="New_Logo-removebg-preview.png" alt="Vet-Medix Logo" class="logo">
+        <h1>Book Your Appointment</h1>
+        <p>Schedule your consultation with our expert vets to ensure your pet's health and happiness.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="team.html">Meet Our Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="doctor.html">Doctor</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="appointment-form">
+            <h2>Schedule Your Visit</h2>
+            <p>Fill out the form below to book an appointment. We'll get back to you as soon as possible.</p>
+            <form action="https://formsubmit.co/issacprosonno@gmail.com" method="POST" class="appointment-form" onsubmit="showConfirmation(event)">
+                <!-- Protecting against spam -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Appointment Request from Vet-Medix">
+                <input type="hidden" name="_template" value="table">
+
+                <ul>
+                    <!-- Name -->
+                    <li>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </li>
+
+                    <!-- Contact Number -->
+                    <li>
+                        <label for="contact">Contact Number:</label>
+                        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+                    </li>
+
+                    <!-- Problem (Dropdown) -->
+                    <li>
+                        <label for="problem">Problem:</label>
+                        <select id="problem" name="problem" required>
+                            <option value="" disabled selected>Select the issue</option>
+                            <option value="General Check-up">General Check-up</option>
+                            <option value="Vaccination">Vaccination</option>
+                            <option value="Emergency Care">Emergency Care</option>
+                            <option value="Grooming">Grooming</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </li>
+
+                    <!-- Date -->
+                    <li>
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </li>
+
+                    <!-- Time -->
+                    <li>
+                        <label for="time">Preferred Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </li>
+                </ul>
+
+                 <!-- Submit -->
+          <div class="button-container">
+          <button type="submit" class="appointment-btn">Submit Appointment Request</button>
+             </div>
+            </form>
+        </section>
+    </main>
+
+     <footer>
+    <p>&copy; 2025<a href="https://mellifluous-lollipop-976ca2.netlify.app/"> Epic Byte Studio.</a> All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

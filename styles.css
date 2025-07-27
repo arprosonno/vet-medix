@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background: #09134f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header .logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+.team-member {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.doctor {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.doctor img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #09134f;
+    color: white;
+}
+header h1 {
+    color: #fafffa;
+    text-align: center;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+section p, ul {
+    text-align: center;
+}
+
+.button {
+    align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Optional: adds space above the button */
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+ 
+
+.gallery img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    margin: 10px; /* Adds spacing around images */
+}
+
+h2 {
+    text-align: center;
+    color: #09134f;
+    border-bottom: 2px solid #09134f;
+    margin-bottom: 3rem;
+    display: block; /* Ensure full-width block for centering */
+    width: 100%; /* Make sure it's fully centered */
+}
